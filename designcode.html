@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+
+
+  <style>
+    
+    .scroll {
+      display: flex;
+      overflow-x: auto;
+      height: 800px;
+    }
+    .scroll::-webkit-scrollbar {
+      width: 0;
+    }
+    body {
+      background-color: rgb(31, 31, 71);
+    }
+    body::-webkit-scrollbar {
+      width: 0;
+    }
+    .container {
+      background-image: linear-gradient(rgb(30, 81, 118), rgb(17, 35, 72));
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 160px;
+      height: 320px;
+      margin-top: 50px;
+      margin-left: 20px;
+      border-radius: 20px;
+      transition: transform 1s, box-shadow 0.15s;
+      cursor: pointer;
+      
+
+    }
+    .container:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 16px 20px rgba(1, 26, 51, 0.2)
+      
+    }
+    .logo {
+      width: 160px ;
+      transition: transform 0.15s;
+    }
+    .logo:hover {
+      transform: scale(0.9);
+    }
+    .text {
+      color: white;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-size: 24px;
+      width: 150px;
+      margin-bottom: 0%;
+      transition: word-spacing 0.15s;
+    }
+    .text:hover {
+      word-spacing: 2px;
+      
+    }
+    .stats {
+      text-align: center;
+      color: rgb(238, 238, 238);
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+     
+    }
+    .container2 {
+      background-image: linear-gradient(rgb(102, 75, 0), rgb(205, 116, 65));
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 160px;
+      height: 320px;
+      margin-top: 50px;
+      margin-left: 20px;
+      border-radius: 20px;
+      transition: transform 1s, box-shadow 0.15s;
+      cursor: pointer;
+    }
+    .container2:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 16px 20px rgba(1, 26, 51, 0.2)
+    }
+    .logo2 {
+      width: 160px ;
+      transition: transform 0.15s;
+    }
+    .logo2:hover {
+      transform: scale(0.9);
+    }
+    .text2 {
+      color: white;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-size: 24px;
+ 
+      margin-bottom: 0%;
+      transition: word-spacing 0.15s;
+    }
+    .text2:hover {
+      word-spacing: 2px;
+      
+    }
+    .stats2 {
+      text-align: center;
+      color: rgb(238, 238, 238);
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+     
+    }
+
+    .container3 {
+      background-image: linear-gradient(rgb(32, 87, 126), rgb(15, 21, 57));
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 160px;
+      height: 320px;
+      margin-top: 50px;
+      margin-left: 20px;
+      border-radius: 20px;
+      transition: transform 1s, box-shadow 0.15s;
+      cursor: pointer;
+    }
+    .container3:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 16px 20px rgba(1, 26, 51, 0.2)
+    }
+    .logo3 {
+      width: 160px ;
+      transition: transform 0.15s;
+    }
+    .logo3:hover {
+      transform: scale(0.9);
+    }
+    .text3 {
+      color: white;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-size: 24px;
+      
+      margin-bottom: 0%;
+      transition: word-spacing 0.15s;
+    }
+    .text3:hover {
+      word-spacing: 2px;
+      
+    }
+    .stats3 {
+      text-align: center;
+      color: rgb(238, 238, 238);
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+     
+    }
+
+    .container4 {
+      background-image: linear-gradient(rgb(71, 143, 209), rgb(89, 56, 191));
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 160px;
+      height: 320px;
+      margin-top: 50px;
+      margin-left: 20px;
+      border-radius: 20px;
+      transition: transform 1s, box-shadow 0.15s;
+      cursor: pointer;
+    }
+    .container4:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 16px 20px rgba(1, 26, 51, 0.2)
+    }
+    .logo4 {
+      width: 160px ;
+      transition: transform 0.15s;
+    }
+    .logo4:hover {
+      transform: scale(0.9);
+    }
+    .text4 {
+      color: white;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-size: 24px;
+      
+      margin-bottom: 0%;
+      transition: word-spacing 0.15s;
+    }
+    .text4:hover {
+      word-spacing: 2px;
+      
+    }
+    .stats4 {
+      text-align: center;
+      color: rgb(238, 238, 238);
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+     
+    }
+
+    .container5 {
+      background-image: linear-gradient(rgb(167, 54, 42), rgb(154, 40, 50));
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 160px;
+      height: 320px;
+      margin-top: 50px;
+      margin-left: 20px;
+      border-radius: 20px;
+      transition: transform 1s, box-shadow 0.15s;
+      cursor: pointer;
+    
+    }
+    .container5:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 16px 20px rgba(1, 26, 51, 0.2)
+    }
+    .logo5 {
+      width: 160px ;
+      transition: transform 0.15s;
+    }
+    .logo5:hover {
+      transform: scale(0.9);
+    }
+    .text5 {
+      color: white;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-size: 24px;
+      
+      margin-bottom: 0%;
+      transition: word-spacing 0.15s;
+    }
+    .text5:hover {
+      word-spacing: 2px;
+      
+    }
+    .stats5 {
+      text-align: center;
+      color: rgb(238, 238, 238);
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+     
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scroll">
+    <div class="container">
+      <img class="logo" src="designcode.png" alt="">
+      <p class="text">Build a 3d Site Without Code with...</p>
+      <p class="stats">10 videos - 3hours</p>
+    </div>
+
+    <div class="container2">
+      <img class="logo2" src="ios.png" alt="">
+      <p class="text2">UI Design for iOS 16 in Sketch</p>
+      <p class="stats2">12 videos - 3hours</p>
+    </div>
+
+    <div class="container3">
+      <img class="logo3" src="3dsite.png" alt="">
+      <p class="text3">Create 3D Site with Spline and React</p>
+      <p class="stats3">9 videos - 1hours</p>
+    </div>
+
+    <div class="container4">
+      <img class="logo4" src="app.png" alt="">
+      <p class="text4">Build an Animated App with Rive...</p>
+      <p class="stats4">15 videos - 3hours</p>
+    </div>
+
+    <div class="container5">
+      <img class="logo5" src="figma.png" alt="">
+      <p class="text5">Prototyping in Figma</p>
+      <p class="stats5">3 videos - 1hours</p>
+    </div>
+  </div>
+</body>
+</html>
